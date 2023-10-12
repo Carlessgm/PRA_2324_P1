@@ -40,10 +40,12 @@ class ListArray : public List<T> {
 		}
 
 		friend ostream& operator<<(ostream &out, const ListArray<T> &list){
-			out << "[";
-			for(int i = 0; i < list.n; i++){
+			out << "List => [";
+			for(int i = 0; i <= list.n - 1; i++){
 				out << list.arr[i];		//El "out" es por el
-				out << ", ";			//"operator<<"
+				if(i < list.n - 1){			//"operator<<"
+					out << ", ";
+				}
 			}
 			out << "]";
 			return out;
