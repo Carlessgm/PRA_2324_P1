@@ -13,7 +13,7 @@ class Node {
 			this -> next = next;		//Si sí, es igual a "next"
 		}
 
-		friend ostream& operator<<(ostream &out, const Node<T> &node){
+		friend ostream& operator<<(ostream &out, const Node<T> &node){	//Imprime una instancia de Node
 			out << node.data;
 
 			return out;
